@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
+
 const StudentForm = ({ addStudent }) => {
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
   const [message, setMessage] = useState("");
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -11,11 +13,12 @@ const StudentForm = ({ addStudent }) => {
       setMessage("Please fill in all fields.");
       return;
     }
-    await addStudent(name, course); // Call function from App.js
+    await addStudent({ name, course });// Call function from App.js
     setName("");
     setCourse("");
     setMessage("Student added successfully!");
   };
+
 
   return (
     <div>
@@ -28,5 +31,6 @@ const StudentForm = ({ addStudent }) => {
     </div>
   );
 };
+
 
 export default StudentForm;

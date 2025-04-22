@@ -1,14 +1,13 @@
 import React from "react";
 
+
 const StudentList = ({ students }) => {
   return (
     <div>
       <h2>Student List</h2>
       <ul>
         {students.length === 0 ? (
-          <p>Esponga Stephen Kyle B.
-          </p>
-          
+          <p>No students added yet.</p>
         ) : (
           students.map((student, index) => (
             <li key={index}>
@@ -21,4 +20,7 @@ const StudentList = ({ students }) => {
   );
 };
 
+
 export default StudentList;
+
+

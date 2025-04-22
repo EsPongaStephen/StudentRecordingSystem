@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #e3f2fd; 
+  background-color: #76b9ea; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 
 
 form {
-  background-color: #ffffff;
+  background-color: #86c1e8;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
